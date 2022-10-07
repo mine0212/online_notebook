@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdn.bootcdn.net/ajax/libs/marked/4.0.2/marked.min.js"></script>
+    <script src="./src/js/markdown.js"></script>
+    <script src="./src/js/cell.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Notebook</title>
+  </head>
+  <body>
+    <div id="notebook">
+      <div id="navigation">
+        <div id="home"><a><href>全部笔记>>></href></a></div>
+        <div id="catalogue"></div>
+      </div>
+      <div id="content">
+        <div id="title">
+        </div>
+        <div class="text">
+          <div class="col-lg-6" id="input" style="width: 38vw; height: min-content;">
+            <div contenteditable="true" class="form-control" oninput="preview();" style="height: min-content;" id="edit"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-default test">
+              <div class="panel-body" id="preview"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="property"></div>
+    </div>                    
+    <!-- <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
